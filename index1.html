@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Legends Image Gallery</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cricket Legends Image Gallery</h1>
+    </header>
+
+    <!-- Filter Buttons -->
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="batsman">Batsmen</button>
+        <button class="filter-btn" data-filter="allrounder">All-Rounder</button>
+        <button class="filter-btn" data-filter="bowler">Bowler</button>
+        <button class="filter-btn" data-filter="keeper">Wicket Keeper</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <div class="gallery-item batsman">
+            <img src="images/image1.png" alt="Sachin Tendulkar">
+            <h3>Sachin Ramesh Tendulkar</h3>
+        </div>
+
+        <div class="gallery-item allrounder">
+            <img src="images/image2.png" alt="Jacques Kallis">
+            <h3>Jacques Kallis</h3>
+        </div>
+
+        <div class="gallery-item bowler">
+            <img src="images/image3.png" alt="Muttiah Muralitharan">
+            <h3>Muttiah Muralitharan</h3>
+        </div>
+
+        <div class="gallery-item keeper">
+            <img src="images/image4.png" alt="MS Dhoni">
+            <h3>Mahendra Singh Dhoni</h3>
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="prev">&#10094;</button>
+
+        <img id="lightbox-img" src="" alt="">
+
+        <button class="next">&#10095;</button>
+
+        <div id="caption"></div>
+
+    </div>
+
+    <script src="script1.js"></script>
+
+</body>
+</html>
